@@ -71,6 +71,7 @@ import com.wdtt.client.ui.SettingsTab
 import com.wdtt.client.ui.DeployTab
 import com.wdtt.client.ui.ExceptionsTab
 import com.wdtt.client.ui.InfoTab
+import com.wdtt.client.ui.TunnelToggleTab
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.flow.first
@@ -349,7 +350,7 @@ fun MainScreen(
                     label = "tab_content"
                 ) { tab ->
                     when (tab) {
-                        0 -> SettingsTab()
+                        0 -> TunnelToggleTab()
                         1 -> DeployTab()
                         2 -> ExceptionsTab()
                         3 -> LogsTab()
